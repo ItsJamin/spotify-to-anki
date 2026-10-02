@@ -58,7 +58,7 @@ def extract_metadata():
 
 def main():
     if len(sys.argv) < 2:
-        sys.exit('Usage: python downloader.py <spotify-playlist-url>')
+        sys.exit('Usage: python spotify_downloader.py <spotify-playlist-url>')
 
     url = sys.argv[1]
     if "playlist" not in url and not re.fullmatch(r"[A-Za-z0-9]+", url):
